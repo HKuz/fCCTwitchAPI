@@ -8,8 +8,11 @@
 
 function getData(){
   $.each(channels, function(){
-    var apiStream = 'https://api.twitch.tv/kraken/streams/' + this +'?callback=?';
-    var apiChannels = 'https://api.twitch.tv/kraken/channels/' + this +'?callback=?';
+    // https://wind-bow.gomix.me/twitch-api
+    var apiStream = 'https://wind-bow.gomix.me/twitch-api/streams/' + this + '?callback=?';
+    var apiChannels = 'https://wind-bow.gomix.me/twitch-api/channels/' + this +'?callback=?';
+    // var apiStream = 'https://api.twitch.tv/kraken/streams/' + this + '?callback=?';
+    // var apiChannels = 'https://api.twitch.tv/kraken/channels/' + this +'?callback=?';
     var name = this;
     var url = "https://www.twitch.tv/" + name;
     var image = "http://healthcarelighthouse.com/wp-content/themes/lighthouse/img/default_user.jpg";
